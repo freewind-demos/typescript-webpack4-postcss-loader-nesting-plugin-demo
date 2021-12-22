@@ -19,7 +19,7 @@ const config: Configuration = {
           options: {
             postcssOptions: {
               plugins: [
-                'postcss-nested',
+                'postcss-nesting',
               ],
             },
           },

@@ -7,7 +7,7 @@ Webpack4 Config "postcss-loader" "nested" plugin Demo
 1. `postcss-loader`必须为支持webpack4的`4.x`，当前为`4.3.0`
 2. postcss-loader v4后必须手动指定`css-loader`，且为支持webpack4的版本`5.x`
 3. `style-loader`必须为支持webpack4的最后一个版本`1.3.0`
-4. `postcss-nested`也必须为支持postcss-loader4的版本`4.2.3`
+4. postcss相关的，只要使用postcss8，其它的插件基本上都支持它了
 
 ```
 npm install

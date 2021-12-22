@@ -13,7 +13,21 @@ const config: Configuration = {
       test: /\.pcss$/,
       use: [
         'style-loader',
-        'postcss-loader'
+        {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: [
+                [
+                  'postcss-nested',
+                  {
+                    // 其他选项
+                  },
+                ],
+              ],
+            },
+          },
+        }
       ]
     }, {
       test: /\.tsx?$/,

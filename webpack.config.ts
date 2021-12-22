@@ -13,17 +13,13 @@ const config: Configuration = {
       test: /\.pcss$/,
       use: [
         'style-loader',
+        'css-loader',
         {
           loader: 'postcss-loader',
           options: {
             postcssOptions: {
               plugins: [
-                [
-                  'postcss-nested',
-                  {
-                    // 其他选项
-                  },
-                ],
+                'postcss-nested',
               ],
             },
           },
